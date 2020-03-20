@@ -30,7 +30,7 @@ if __name__ == "__main__":
     trimmed_down_video_file = "project_video_trim_down.mp4"
 
     if not path.exists(trimmed_down_video_file):
-        trim_a_video(input_video_file, trimmed_down_video_file, 22, 25)
+        trim_a_video(input_video_file, trimmed_down_video_file, 23, 25)
 
     output_dir_path = "failed_frames_auto_generated"
     divide_video_into_frames(trimmed_down_video_file, output_dir_path)

@@ -35,7 +35,7 @@ class FindingLanes(object):
         GLV.global_left_lane_points_y.append(left_lane_points_y)
         GLV.global_right_lane_points_x.append(right_lane_points_x)
         GLV.global_right_lane_points_y.append(right_lane_points_y)
-        print("In find lane points")
+        # print("In find lane points")
         
 
         # For testing - plot the image.
@@ -140,9 +140,9 @@ class FindingLanes(object):
         # Apply the same for two plots.
         # The result contains 3 values from the polyfit function to use it in "y=Ax**2+Bx+c"
         all_variables.left_lane_poly = np.polyfit(all_variables.left_lane_points_y, all_variables.left_lane_points_x, 2)
-        print(all_variables.left_lane_poly)
+        #print(all_variables.left_lane_poly)
         all_variables.right_lane_poly = np.polyfit(all_variables.right_lane_points_y, all_variables.right_lane_points_x, 2)
-        print(all_variables.right_lane_poly)
+        #print(all_variables.right_lane_poly)
 
         all_variables.left_lane_plot_x = all_variables.left_lane_poly[0]*ploty**2 + all_variables.left_lane_poly[1]*ploty + all_variables.left_lane_poly[2]
         all_variables.left_lane_plot_y = ploty

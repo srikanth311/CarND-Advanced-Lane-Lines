@@ -13,6 +13,7 @@ class AllVariablesInPipeline(object):
         self.undistorted_image = None
         self.sobel_binary_image = None
         self.schannel_binary_image = None
+        self.rchannel_binary_image = None
         self.sobel_magnitude_binary_image = None
         self.sobel_direction_binary_image = None
         self.combined_binary_image = None
